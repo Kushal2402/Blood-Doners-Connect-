@@ -1,0 +1,38 @@
+footer {
+  background-color: rgba(224, 28, 28, 0.87);
+  color: white;
+  display: flex;
+}
+#abtus,
+#contactus {
+  flex: 1;
+  text-align: center;
+}
+#abtus h1,
+#contactus h1 {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+#abtus p,
+#contactus p {
+  text-align: center;
+  margin: 10px 20px;
+}
+
+@media screen and (max-width: 768px) {
+    /* for devices or browser windows with screen size below 768px */
+    footer {
+      flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 491px) {
+    #abtus h1, #contactus h1 {
+      font-size: 20px;
+    }
+    #abtus p, #contactus p {
+      font-size: 12px;
+      text-align: center;
+    }
+}

@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  /* position: fixed; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /*push 1st item to left, last to right and rest equallly in between*/
+  align-items: center; /* Vertically centre the elements contained*/
+  background-color: rgba(224, 28, 28, 0.87);
+}
+
+#titleText h1 {
+  padding: 0px;
+  margin: 0px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#titleText {
+  padding: 20px;
+  margin: 0px;
+  color: white;
+}
+
+#admin {
+  padding-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+#admin:hover {
+  background-color: white;
+  transition: 0.5s ease-in;
+}
+#admin:hover a {
+  color: rgba(224, 28, 28, 0.87);
+}
+#admin:hover svg {
+  fill: rgba(224, 28, 28, 0.87);
+}
+#admin svg {
+  width: 15px;
+  fill: white;
+  padding: 10px;
+}
+#admin a {
+  padding: 10px;
+  font-weight: normal;
+  font-size: small;
+  color: white;
+  text-decoration: none;
+}
+
+#logo {
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+}
+#logo img {
+  padding-left: 15px;
+  align-items: center;
+  width: 80px;
+}
+
+#content {
+  height: 100vh;
+  background-image: url("images/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#content button {
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 30px;
+  width: 300px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(224, 28, 28, 0.87);
+  border-radius: 80px;
+  margin: 10px;
+  color: white;
+}
+#searchDonor button:hover,
+#becomeDonor button:hover,
+#login button:hover {
+  width: 400px;
+  transition: 0.5s ease-in-out;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 970px) {
+  #content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* for devices or browser windows with screen size below 768px */
+  #content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #content button {
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 20px;
+    width: 250px;
+    cursor: pointer;
+    border-radius: 80px;
+  }
+  #searchDonor button:hover,
+  #becomeDonor button:hover {
+    width: 300px;
+    transition: 0.5s ease-in-out;
+    font-size: 20px;
+  }
+
+  header {
+    width: 100%;
+  }
+  #logo img {
+    padding-left: 10px;
+    align-items: center;
+    width: 65px;
+  }
+  #logo {
+    margin: 5px;
+    width: 85px;
+    height: 85px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  #admin {
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    font-weight: bold;
+  }
+  #admin svg,
+  #admin a {
+    padding: 2px 5px;
+    font-size: smaller;
+    font-weight: normal;
+    padding: 3px 8px;
+  }
+  #admin svg {
+    width: 13px;
+  }
+}
+@media screen and (max-width: 491px) {
+  #logo img {
+    padding-top: 2px;
+    padding-left: 5px;
+    align-items: center;
+    width: 40px;
+  }
+  #logo {
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  #titleText {
+    padding: 20px 10px;
+  }
+  #titleText h1 {
+    font-size: 16px;
+  }
+  #admin svg {
+    width: 13px;
+  }
+  #admin svg,
+  #admin a {
+    padding: 2px 5px;
+    font-size: 8px;
+    font-weight: normal;
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #titleText {
+    padding: 20px 10px;
+  }
+  #titleText h1 {
+    font-size: 16px;
+  }
+}
